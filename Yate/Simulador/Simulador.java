@@ -25,28 +25,28 @@ public void run () {
 			consumoAct = consumoAct*velAct;
 			admin1.RestarBaterias(velAct,consumoAct);
 			
-			Thread.sleep(5000);// a los 30 seg carga baterias 
+			Thread.sleep(5000);
 			admin1.CargarBaterias();
 			admin1.CargarPanel(solActual);
 			
-			Thread.sleep(5000); // a los 35 seg carga paneles
+			Thread.sleep(5000); 
 			admin1.CargarBaterias();
 			admin1.CargarPanel(solActual);
 			
-			Thread.sleep(5000); // a los 40 seg resta bateria y reduce sol
+			Thread.sleep(5000); 
 			admin1.RestarBaterias(velAct,consumoAct);
 			solActual = solActual- 20;
 			
-			Thread.sleep(5000); // a los 43 seg resta bateria 
+			Thread.sleep(5000); 
 			admin1.RestarBaterias(velAct,consumoAct);
 			
-			Thread.sleep(5000); // a los 48 seg aumenta sol y aumenta velocidad (consumo)
+			Thread.sleep(5000); 
 			solActual = solActual + 30;
 			velAct++;
 			consumoAct = consumoAct*velAct;
 			admin1.RestarBaterias(velAct,consumoAct);
 			
-			Thread.sleep(5000);// a los 53 seg carga baterias 
+			Thread.sleep(5000);
 			admin1.CargarBaterias();
 			
 			Thread.sleep(5000); // a los 58 seg carga paneles
