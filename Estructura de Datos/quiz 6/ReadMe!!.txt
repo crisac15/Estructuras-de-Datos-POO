@@ -1,0 +1,5 @@
+El programa cumple con todos los requisitos solicitados, modifica la hora, genera horas random entre el rango horario ingresado en fillFlights, se modifica el valor del flightTime, se cumple a la perfeccion lo de crear 2 vuelos con horas y minutos distintos.
+
+Cuando se accede a los vuelos que se encuentran en listaVuelos, parece que solo se retorna los valores del ultimo vuelo creado, sin embargo en la funcion Fill Flights si llegan al add de lista 2 vuelos con valores diferentes, esto es comprobable con los COUTS que se dejaron en esta funcion, se puede observar como la Hora y Minutos que llegan al constructor son distintas con cada iteracion. Las listas usadas son las que provee el profesor en el curso. 
+
+No sé a qué se debe pero espero que se tome en cuenta, estuve viendo el error con el profesor y no sabemos que pasa al realizar el find en la listaVuelos.
