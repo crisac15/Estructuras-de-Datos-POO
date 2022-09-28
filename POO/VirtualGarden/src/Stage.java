@@ -64,8 +64,8 @@ public class Stage {
 	public String getImagen() {
 		return imagen;
 	}
-	public void setImagen(String imagen) {
-		this.imagen = imagen;
+	public void setImagen(String pImagen) {
+		this.imagen = pImagen;
 	}
 	
 }

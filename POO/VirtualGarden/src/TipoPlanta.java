@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class TipoPlanta {
 	private String nombreS;
@@ -8,7 +9,7 @@ public class TipoPlanta {
 	private int consumoAguaS;
 	private int consumoAbonoS;
 	private int stageIndexS;
-	private int imagenS;
+	private ArrayList <Stage> etapaS;
 	
 	TipoPlanta(){
 		
@@ -17,8 +18,8 @@ public class TipoPlanta {
 	public String getNombreS() {
 		return nombreS;
 	}
-	public void setNombreS(String nombreS) {
-		this.nombreS = nombreS;
+	public void setNombreS(String pNombreS) {
+		this.nombreS = pNombreS;
 	}
 	public int getIdS() {
 		return idS;
@@ -62,11 +63,13 @@ public class TipoPlanta {
 	public void setStageIndexS(int stageIndexS) {
 		this.stageIndexS = stageIndexS;
 	}
-	public int getImagenS() {
-		return imagenS;
+
+	public ArrayList <Stage> getEtapaS() {
+		return etapaS;
 	}
-	public void setImagenS(int imagenS) {
-		this.imagenS = imagenS;
+
+	public void setEtapaS(ArrayList <Stage> etapaS) {
+		this.etapaS = etapaS;
 	}
 	
 }

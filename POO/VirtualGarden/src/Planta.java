@@ -11,7 +11,7 @@ public class Planta {
 	private int consumoAbono;
 	private int stageIndex;
 	private ArrayList <Stage> etapa;
-	private int imagen;
+
 	
 	public Planta(ArrayList <TipoPlanta> pTiposPlantas, int pIndex){
 		this.setNombre(pTiposPlantas.get(pIndex).getNombreS());
@@ -60,16 +60,6 @@ public class Planta {
 
 	public void setStageIndex(int actStage) {
 		this.stageIndex = actStage;
-	}
-
-
-	public int getImagen() {
-		return imagen;
-	}
-
-
-	public void setImagen(int imagen) {
-		this.imagen = imagen;
 	}
 
 	public String getNombre() {

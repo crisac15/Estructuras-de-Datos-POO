@@ -176,37 +176,33 @@
 	},
 
 	"Estaciones":[
-    {"Estacion": {
-    "nombre":"Invierno",
-    "nivelSolMax":"50",  
-    "nivelSolMin":"20",
-    "nivelLluviaMin":"20",
-    "nivelLluviaMax":"50"
-  }
-},
-    {"Estacion":{
+		{	
+      "nombre":"Invierno",
+			"nivelSolMax":"50",  
+      "nivelSolMin":"20",
+      "nivelLluviaMin":"20",
+    	"nivelLluviaMax":"50"
+    },
+    {
       "nombre":"Verano",
 			"nivelSolMax":"80",
       "nivelSolMin":"50",
       "nivelLluviaMin":"0",
     	"nivelLluviaMax":"30"
-    }
 		},
-    {"Estacion":{
+    {
       "nombre":"Otono",
 			"nivelSolMax":"50",
       "nivelSolMin":"20",
       "nivelLluviaMin":"30",
     	"nivelLluviaMax":"60"
-    }
 		},
-    {"Estacion":{
+    {
       "nombre":"Primavera",
 			"nivelSolMax":"70",
       "nivelSolMin":"40",
       "nivelLluviaMin":"5",
     	"nivelLluviaMax":"30"
-    }
 		}
-  ]
+	]
 }
