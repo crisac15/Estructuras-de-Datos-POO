@@ -35,27 +35,37 @@ public:
 };
 class Miner
 {
-private:
+protected:
     string nombre;
+    int velocidadDeMov;
+    int capacidadCarga;
 
 public:
-    Miner();
-    virtual void setName();
-    virtual void setStrategy();
+    Miner(){};
+    virtual void setStrategy(string);
+    int getVelocity()
+    {
+        return this->velocidadDeMov;
+    }
+    int getCapacity()
+    {
+        return this->capacidadCarga;
+    }
 };
 
 class Explorer : public Miner
 {
 private:
-    string nombre;
-    int velocidadDeMov = 20;
-    int capacidadCarga = 20;
     Strategy asignada;
     map<string, Strategy> estrategias;
 
 public:
     Explorer()
     {
+
+        this->nombre = "explorer";
+        this->capacidadCarga = 8;
+        this->velocidadDeMov = 20;
         Strategy ejemplo = Strategy("tryhard", "escoje la primer puerta con tunel", "camina hacia la mitad del tunel para garantizar cantidad/tiempo");
         Strategy ejemplo2 = Strategy("analisis", "busca la puerta con tunel mas grande", "viaja hasta el final del tunel para minar");
         this->estrategias["tryhard"] = ejemplo;
@@ -69,12 +79,7 @@ public:
     {
         return asignada;
     }
-    void setName(string);
 };
-void Explorer::setName(string pName)
-{
-    Explorer::nombre = pName;
-}
 
 int main()
 {
@@ -89,22 +94,10 @@ int main()
     }
 
     Explorer exp1 = Explorer();
-    exp1.setStrategy("tryhard");
-    cout << "Nombre de estrategia asignada:  " << exp1.getStrategy().getNombreEstrategia() << endl;
-    cout << "Criterio para tuneles:  " << exp1.getStrategy().getCriterioTunel() << endl;
-    cout << "Criterio para puertas:  " << exp1.getStrategy().getCriterioPuerta() << endl;
+    // exp1.setStrategy("tryhard");
+    // cout << "Nombre de estrategia asignada:  " << exp1.getStrategy().getNombreEstrategia() << endl;
+    // cout << "Criterio para tuneles:  " << exp1.getStrategy().getCriterioTunel() << endl;
+    // cout << "Criterio para puertas:  " << exp1.getStrategy().getCriterioPuerta() << endl;
 
-    /*
-    Some basic functions associated with Map:
-    begin() – Returns an iterator to the first element in the map.
-    end() – Returns an iterator to the theoretical element that follows the last element in the map.
-    size() – Returns the number of elements in the map.
-    max_size() – Returns the maximum number of elements that the map can hold.
-    empty() – Returns whether the map is empty.
-    pair insert(keyvalue, mapvalue) – Adds a new element to the map.
-    erase(iterator position) – Removes the element at the position pointed by the iterator.
-    erase(const g)– Removes the key-value ‘g’ from the map.
-    clear() – Removes all the elemen
-    */
     return 0;
 }
