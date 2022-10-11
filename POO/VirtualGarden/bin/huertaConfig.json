@@ -1,0 +1,212 @@
+
+	{
+		"Plantas":[
+      {
+			"Planta": {
+      "nombre": "Cilantro",
+      "edad": "1",
+      "vitalidad":"100",
+      "actNivelAgua":"40",
+      "actNivelAbono":"40",
+      "consumoAbono":"5",
+      "consumoAgua":"5",
+      "imagenActual":"media/cilantroAlmacigo.jpg",
+      "pocaAgua":"media/cilantroPocaAgua.jpg",
+      "muchaAgua":"media/cilantroMuchaAgua.jpg",
+      "pocoAbono":"media/cilantroPocoAbono.jpg",
+      "actStage": "1",
+      "stages":[
+				{ 
+					"nivel":"0",
+      		"imagen":"media/cilantroMuerto.jpg"
+				},
+				{
+          "nivel":"1",
+					"minNivelAgua":"20",
+					"maxNivelAgua":"40",
+          "minTemperatura":"10",
+					"maxTemperatura":"40",
+          "minNivelAbono":"15",
+					"maxNivelAbono":"40",
+					"rangeTime":"15", 
+					"imagen":"media/cilantroAlmacigo.jpg"
+				},
+				{ 
+          "nivel":"2",
+					"minNivelAgua":"20",
+					"maxNivelAgua":"45",
+          "minTemperatura":"15",
+					"maxTemperatura":"40",
+          "minNivelAbono":"20",
+					"maxNivelAbono":"50",
+					"rangeTime":"45", 
+
+					"imagen":"media/cilantroJoven.jpg"
+
+				},
+				{ 
+          "nivel":"3",
+					"minNivelAgua":"25",
+					"maxNivelAgua":"35",
+          "minTemperatura":"15",
+					"maxTemperatura":"40",
+          "minNivelAbono":"30",
+					"maxNivelAbono":"50",
+					"rangeTime":"1095", 
+          "imagen":"media/cilantroAdulto.jpg"
+				}
+			]
+}		
+},{
+  "Planta":{
+    "nombre": "Cactus",
+    "edad": "1",
+    "vitalidad":"100",
+    "actNivelAgua":"7",
+    "actNivelAbono":"50",
+    "consumoAbono":"5",
+    "consumoAgua":"5",
+    "imagenActual":"imagenActual.jpg",
+    "pocaAgua":"media/cactusPocaAgua.jpg",
+    "muchaAgua":"media/cactusMuchaAgua.jpg",
+    "pocoAbono":"media/cactusPocoAbono.jpg",
+    "actStage": "1",
+    "stages":[
+      {
+        "nivel":"0",
+        "imagen":"cactusMuerto.jpg"
+      },
+      
+      {
+        "nivel":"1",
+        "minNivelAgua":"1",
+        "maxNivelAgua":"35",
+        "minTemperatura":"25",
+        "maxTemperatura":"50",
+        "minNivelAbono":"15",
+        "maxNivelAbono":"50",
+        "rangeTime":"30", 
+
+        "imagen":"cactusAlmacigo.jpg"
+
+      },
+      {
+        "nivel":"2",
+        "minNivelAgua":"1",
+        "maxNivelAgua":"35",
+        "minTemperatura":"25",
+        "maxTemperatura":"50",
+        "minNivelAbono":"15",
+        "maxNivelAbono":"30",
+        "rangeTime":"100", 
+
+        "imagen":"cactusJoven.jpg"
+
+      },        
+      {
+        "nivel":"3",
+        "minNivelAgua":"1",
+        "maxNivelAgua":"35",
+        "minTemperatura":"25",
+        "maxTemperatura":"50",
+        "minNivelAbono":"10",
+        "maxNivelAbono":"40",
+        "rangeTime":"2000", 
+
+        "imagen":"cactusAdulto.jpg"
+
+      }
+    ]
+    }
+},
+{
+  "Planta":{
+  "nombre":"Rabano",
+  "edad": "1",
+  "vitalidad":"100",
+  "actNivelAgua":"50",
+  "actNivelAbono":"50",
+  "consumoAbono":"5",
+  "consumoAgua":"5",
+  "imagenActual":"rabanoAlmacigo.jpg",
+  "pocaAgua":"media/rabanoPocaAgua.jpg",
+  "muchaAgua":"media/rabanoMuchaAgua.jpg",
+  "pocoAbono":"media/rabanoPocoAbono.jpg",
+  "actStage": "1",
+    "stages":[
+      {
+        "nivel":"0",
+        "imagen":"rabanoMuerto.jpg"
+      },
+      {
+        "nivel":"1",
+        "minNivelAgua":"20",
+        "maxNivelAgua":"50",
+        "minTemperatura":"10",
+        "maxTemperatura":"27",
+        "minNivelAbono":"35",
+        "maxNivelAbono":"50",
+        "rangeTime":"40", 
+        "imagen":"rabanoAlmacigo.jpg"
+      },          
+      {
+        "nivel":"2",
+        "minNivelAgua":"30",
+        "maxNivelAgua":"50",
+        "minTemperatura":"10",
+        "maxTemperatura":"27",
+        "minNivelAbono":"30",
+        "maxNivelAbono":"60",
+        "rangeTime":"80",
+        "imagen":"rabanoJoven.jpg"
+      },         
+      {
+        "nivel":"3",
+        "minNivelAgua":"30",
+        "maxNivelAgua":"60",
+        "minTemperatura":"10",
+        "maxTemperatura":"27",
+        "minNivelAbono":"40",
+        "maxNivelAbono":"60",
+        "rangeTime":"275", 
+        "imagen":"rabanoAdulta.jpg"
+    }
+  ]
+}
+}
+],
+	"Estaciones":[
+    {"Estacion": {
+    "nombre":"Invierno",
+    "nivelSolMax":"25",  
+    "nivelSolMin":"1",
+    "nivelLluviaMin":"25",
+    "nivelLluviaMax":"50"
+  }
+},
+    {"Estacion":{
+      "nombre":"Verano",
+			"nivelSolMax":"50",
+      "nivelSolMin":"25",
+      "nivelLluviaMin":"1",
+    	"nivelLluviaMax":"20"
+    }
+		},
+    {"Estacion":{
+      "nombre":"Otono",
+			"nivelSolMax":"35",
+      "nivelSolMin":"1",
+      "nivelLluviaMin":"1",
+    	"nivelLluviaMax":"40"
+    }
+		},
+    {"Estacion":{
+      "nombre":"Primavera",
+			"nivelSolMax":"45",
+      "nivelSolMin":"20",
+      "nivelLluviaMin":"5",
+    	"nivelLluviaMax":"25"
+    }
+		}
+  ]
+}
