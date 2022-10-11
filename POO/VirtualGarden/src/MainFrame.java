@@ -102,7 +102,7 @@ public class MainFrame extends JFrame {
 				panel.setBounds(x,y,250,160);
 				temporal.setBounds(panel.getBounds()); //Aquí actualizamos a temporal.
 				
-				JLabel vida = new JLabel("0"); //Tiene que tener un metodo para cambiarlo, set tiene que inicilizar, bounds etc
+				JLabel vida = new JLabel("0"); 
 				vida.setBounds(10,10,100,20);
 				vida.setForeground(Color.BLACK);
 				JButton regar = addRegarButton();
@@ -195,8 +195,5 @@ public class MainFrame extends JFrame {
 		
 		
 	}
-	
-	//Metodos en el controller y manager
-	
 	
 }
